@@ -1,0 +1,45 @@
+header {
+  background-color: #5a4a42;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover {
+  color: orange;
+}
+
+.gallery {
+  padding: 20px;
+  background-color: grey;
+}
+
+.gallery .gallery-one {
+  display: flex;
+}
+
+.gallery .gallery-two {
+  display: flex;
+}
+
+.gallery .gallery-item {
+  border: 1px solid rgba(128, 128, 128, 0.811);
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

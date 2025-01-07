@@ -1,0 +1,51 @@
+$header-bg: #5a4a42;
+$text-color: white;
+$gallery-bg-color: grey;
+$gallery-gap: 10px;
+
+header {
+    
+  background-color: $header-bg;
+  padding: 10px;
+}
+
+  nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }  
+
+     li a {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      li a:hover{
+        color: orange;
+      }
+
+     .gallery {
+    padding: 20px;
+    background-color: $gallery-bg-color;
+  }
+
+    .gallery .gallery-one{
+        display: flex;
+    }
+
+    .gallery .gallery-two{
+        display: flex;
+    }
+
+    .gallery .gallery-item {
+      border: 1px solid rgba(128, 128, 128, 0.811);
+      padding: 10px;
+      text-align: center;
+      background-color: $text-color;
+      width: 100%;
+    }
+
+      img {
+        width: 100%;
+      }
