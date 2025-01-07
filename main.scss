@@ -3,6 +3,26 @@ $text-color: white;
 $gallery-bg-color: grey;
 $gallery-gap: 10px;
 
+
+@mixin text-style() {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@mixin gallery-style(){
+    border: 1px solid rgba(128, 128, 128, 0.811);
+    padding: 10px;
+    text-align: center;
+    background-color: $text-color;
+    width: 100%;
+}
+
+@mixin flex(){
+    display: flex;
+    gap: 30px;
+}
+
 header {
     
   background-color: $header-bg;
@@ -10,15 +30,13 @@ header {
 }
 
   nav ul {
-    display: flex;
-    gap: 30px;
+      @include flex();
     list-style: none;
   }  
 
      li a {
-        color: $text-color;
-        text-decoration: none;
-        font-size: 18px;
+        @include text-style();
+
       }
 
       li a:hover{
@@ -39,13 +57,9 @@ header {
     }
 
     .gallery .gallery-item {
-      border: 1px solid rgba(128, 128, 128, 0.811);
-      padding: 10px;
-      text-align: center;
-      background-color: $text-color;
-      width: 100%;
+        @include gallery-style()
     }
 
-      img {
+      .gallery-item img {
         width: 100%;
       }
